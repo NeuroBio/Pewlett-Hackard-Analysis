@@ -42,7 +42,6 @@ CREATE TABLE dept_emp (
 	to_date DATE NOT NULL,
 	FOREIGN KEY (emp_no) REFERENCES employees (emp_no),
 	FOREIGN KEY (dept_no) REFERENCES departments (dept_no),
-	PRIMARY KEY(emp_no)
 );
 
 CREATE TABLE titles (
@@ -51,5 +50,17 @@ CREATE TABLE titles (
 	from_date DATE NOT NULL,
 	to_date DATE NOT NULL,
 	FOREIGN KEY (emp_no) REFERENCES employees (emp_no),
-	PRIMARY KEY(emp_no)
 );
+
+
+SELECT * FROM departments;
+SELECT * FROM employees;
+SELECT * FROM dept_manager;
+SELECT * FROM dept_emp;
+SELECT * FROM salaries;
+SELECT * FROM titles;
+
+-- ALTER TABLE titles DROP CONSTRAINT titles_pkey;
+-- ALTER TABLE titles ADD CONSTRAINT titles_fkey
+--  	FOREIGN KEY (emp_no) REFERENCES employees (emp_no);
+
