@@ -168,3 +168,29 @@ FROM current_emp as ce
 		ON (ce.emp_no = de.emp_no)
 	INNER JOIN departments as d
 		ON (de.dept_no = d.dept_no)
+		
+-- make table of retiring sales employees		
+SELECT ri.emp_no,
+	ri.first_name,
+	ri.last_name,
+	d.dept_name
+INTO sales_retirees
+FROM retirement_info AS ri
+	INNER JOIN dept_emp as de
+		ON (ri.emp_no = de.emp_no)
+	INNER JOIN departments as d
+		ON (de.dept_no = d.dept_no)
+WHERE (d.dept_name = 'Sales');
+	
+SELECT * from dept_emp;
+
+SELECT ri.emp_no,
+	ri.first_name,
+	ri.last_name,
+	d.dept_name
+FROM retirement_info AS ri
+	INNER JOIN dept_emp as de
+		ON (ri.emp_no = de.emp_no)
+	INNER JOIN departments as d
+		ON (de.dept_no = d.dept_no)
+WHERE (d.dept_name IN ('Sales', 'Development'));
