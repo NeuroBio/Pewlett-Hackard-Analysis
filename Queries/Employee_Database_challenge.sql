@@ -25,7 +25,7 @@ ORDER BY emp_no, to_date DESC;
 
 -- Deliverable 1: steps 15-21
 -- Get count of titles that are retiring
-SELECT COUNT(title) emp_no,
+SELECT COUNT(title),
 	title
 INTO retiring_titles
 FROM unique_titles
