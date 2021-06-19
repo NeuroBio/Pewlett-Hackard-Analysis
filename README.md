@@ -1,7 +1,7 @@
 # Pewlett-Hackard-Analysis: preparing a business for an upcoming wave of retirees and open-positions
 
 ## Overview
-Large company Pewlett-Hackard is expecting a high number of retirements from their company as the baby-boomers age.  PH needs to know how many open positions they will expect to have in the upcoming years, so they can target their hiring initiatives at filling these positions.  Furthermore, certain departments fear losing expert knowledge as older workers retire, so they would like to know which retiring employees may be eligible to work parttime to mentor new hires instead of immediately switching to full retirement.  To answer these questions, PH's old data tracking system in excel will not be sufficient.  I will convert the excel tables into SQL tables to perform queries across tables.
+Large company Pewlett-Hackard (PH) is expecting a high number of retirements from their company as the baby-boomers age.  PH needs to know how many open positions they will expect to have in the upcoming years, so they can target their hiring initiatives at filling these positions.  Furthermore, certain departments fear losing expert knowledge as older workers retire, so they would like to know which retirement ready employees may be eligible to work parttime to mentor new hires instead of immediately switching to full retirement.  To answer these questions, PH's old data tracking system in excel will not be sufficient.  I will convert the excel tables into SQL tables to perform queries across tables.
 
 ## Results
 **Table 1:** All individuals close to retirement or retired by all titles held while at PH.  [Full Table](Data/retirement_titles.csv)
